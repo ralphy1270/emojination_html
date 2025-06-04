@@ -1,0 +1,122 @@
+/* style.css */
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+/* Custom Fonts */
+@font-face {
+  font-family: "Comics Deluxe";
+  src: url("/fonts/ComicsDeluxe.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Font families */
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-bangers,
+.font-comic-bangers {
+  font-family: "Bangers", sans-serif;
+}
+
+.font-figtree {
+  font-family: "Figtree", sans-serif;
+}
+
+/* Root variables */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Scale utility classes */
+.scale-50 { transform: scale(0.5); }
+.scale-55 { transform: scale(0.55); }
+.scale-60 { transform: scale(0.6); }
+.scale-65 { transform: scale(0.65); }
+.scale-70 { transform: scale(0.7); }
+.scale-75 { transform: scale(0.75); }
+.scale-80 { transform: scale(0.8); }
+.scale-85 { transform: scale(0.85); }
+.scale-90 { transform: scale(0.9); }
+.scale-95 { transform: scale(0.95); }
+.scale-100 { transform: scale(1); }
+.scale-105 { transform: scale(1.05); }
+.scale-110 { transform: scale(1.1); }
+.scale-115 { transform: scale(1.15); }
+.scale-120 { transform: scale(1.2); }
+.scale-130 { transform: scale(1.3); }
+.scale-140 { transform: scale(1.4); }
+.scale-150 { transform: scale(1.5); }
+.scale-160 { transform: scale(1.6); }
+.scale-170 { transform: scale(1.7); }
+.scale-180 { transform: scale(1.8); }
+.scale-190 { transform: scale(1.9); }
+.scale-200 { transform: scale(2); }
+.scale-230 { transform: scale(2.3); }
+.scale-280 { transform: scale(2.8); }
+.scale-350 { transform: scale(3.5); }
+.scale-500 { transform: scale(5); }
+
+/* Rotate upside down */
+.rotate-upside-down {
+  transform: rotate(180deg);
+}
+
+/* Specific scale classes */
+.scale-background-circle {
+  transform: scale(5);
+}
+
+.scale-cloud-hero {
+  transform: scale(3);
+}
+
+.cloud-top,
+.cloud-bottom {
+  transform: scale(3);
+}
+
+.yellow-background-mobile {
+  transform: scale(2);
+}
+
+.flip-horizontal {
+  transform: scaleX(-1);
+}
+
+.modal {
+  transform: scale(0.77);
+}
+
+.rotate-kahome {
+    transform: rotate(7deg);
+}
+
+/* Responsive scales */
+@media screen and (min-width: 640px) {
+  .scale-background-circle { transform: scale(4); }
+  .scale-cloud-hero { transform: scale(1.8); }
+  .cloud-top, .cloud-bottom { transform: scale(3); }
+}
+
+@media screen and (min-width: 768px) {
+  .scale-background-circle { transform: scale(3); }
+  .scale-cloud-hero { transform: scale(1.8); }
+  .cloud-top, .cloud-bottom { transform: scale(2.3); }
+}
+
+@media screen and (min-width: 1024px) {
+  .scale-background-circle { transform: scale(2); }
+  .scale-cloud-hero { transform: scale(1); }
+  .cloud-top, .cloud-bottom { transform: scale(1.8); }
+}
+
+@media screen and (min-width: 1536px) {
+  .scale-background-circle { transform: scale(2); }
+  .scale-cloud-hero { transform: scale(1); }
+  .cloud-top, .cloud-bottom { transform: scale(1); }
+}

@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/@motion.dev/dom"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/@motion.dev/dom"></script>
+    <!-- Link to the style.css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- HEADER'S AND FOOTER'S -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Figtree:wght@500;700;800&family=Poppins&display=swap");
+      .font-bangers {
+        font-family: "Bangers", cursive;
+      }
+      .font-figtree {
+        font-family: "Figtree", sans-serif;
+      }
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+      .scale-280 {
+        transform: scale(2.8);
+      }
+      .top-75 {
+        top: 75px;
+      }
+      .bottom-45 {
+        bottom: 45px;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <div class="pt-14" id="Hero">
+      <div class="relative pb-1 overflow-hidden">
+        <div
+          class="relative flex flex-col space-y-[20px] sm:space-y-[68px] md:space-y-0 md:flex-row items-stretch justify-center bg-[#4AB3EC] border-t-[11px] border-t-black mt-1"
+        >
+          <!-- Left image section -->
+          <div
+            class="order-2 md:order-1 relative flex flex-col items-end justify-center md:justify-start w-full mt-[40px] sm:mt-[80px] md:mt-0 md:w-[60%] z-30"
+          >
+            <img
+              class="absolute sm:bottom-0 xl:top-0 w-[920px] left-8 scale-95 sm:left-0 sm:scale-100 md:ml-[20px] z-0 pointer-events-none select-none"
+              src="/images/hero/background.png"
+              alt=""
+            />
+
+            <!-- Animated groups -->
+            <div
+              id="animated-groups"
+              class="md:absolute md:bottom-0 xl:relative w-full"
+            ></div>
+
+            <!-- Emojis -->
+            <div class="absolute w-full h-full z-20">
+              <div class="relative w-full h-full">
+                <img
+                  class="absolute w-[50px] xl:w-[100px] left-10 top-0 md:top-[120px] xl:top-[28px] md:left-[120px]"
+                  src="/images/hero/emoji1.png"
+                  alt=""
+                />
+                <img
+                  class="absolute w-[50px] xl:w-[100px] right-[20px] top-0 md:top-[120px] xl:top-[16px] md:right-[48px]"
+                  src="/images/hero/emoji1.png"
+                  alt=""
+                />
+                <img
+                  class="absolute w-[90px] xl:w-[190px] top-[60px] right-0 md:top-[192px] md:right-0"
+                  src="/images/hero/emoji3.png"
+                  alt=""
+                />
+                <img
+                  class="absolute w-[80px] xl:w-[190px] bottom-[80px] sm:bottom-[140px] md:bottom-[120px] left-[28px]"
+                  src="/images/hero/emoji4.png"
+                  alt=""
+                />
+                <img
+                  class="absolute w-[180px] xl:w-[290px] bottom-10 right-0 sm:bottom-[80px] md:bottom-[60px] md:right-[40px]"
+                  src="/images/hero/gif-emoji.gif"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Right content -->
+          <div
+            class="order-1 md:order-2 flex flex-col items-center justify-start px-5 md:justify-start w-full md:w-[40%] z-20 pt-1 md:pt-3 lg:pt-10 md:pb-40"
+          >
+            <img
+              class="w-[240px] md:w-[359px] h-auto"
+              src="/images/hero/big_emoji.png"
+              alt="big emoji"
+            />
+            <img
+              class="w-[380px] md:w-[511px] h-auto rotate-kahome -mt-10 lg:-mt-14"
+              src="/images/hero/ka-home.png"
+              alt="ka nation at home"
+            />
+            <img
+              class="w-[350px] md:w-[520px] -mt-3 lg:-mt-5 h-auto"
+              src="/images/hero/manood-sumagot.png"
+              alt="manood sumagot"
+            />
+            <img
+              class="w-[350px] md:w-[446px] mt-3 h-auto"
+              src="/images/hero/2000.png"
+              alt="2000 pesos"
+            />
+            <img
+              class="w-[440px] md:w-[510px] mt-7 md:mt-5"
+              src="/images/hero/text-content.png"
+              alt=""
+            />
+          </div>
+
+          <!-- Background Circles -->
+          <div
+            class="absolute scale-background-circle w-full h-full z-10 overflow-hidden"
+          >
+            <img
+              class="w-full pointer-events-none select-none"
+              src="/images/hero/background-circles.png"
+              alt=""
+            />
+          </div>
+
+          <!-- Buildings -->
+          <div class="absolute -bottom-5 w-full z-0">
+            <img
+              class="pointer-events-none select-none"
+              src="/images/hero/background-building.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- Bottom Cloud -->
+        <div class="absolute scale-cloud-hero bottom-7 md:bottom-0 w-full z-50">
+          <img
+            class="pointer-events-none select-none w-full"
+            src="/images/hero/cloud.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div class="bg-white text-black">
+      <div id="form">
+        <div
+          class="flex flex-row items-start justify-center px-[20px] pt-[28px] pb-[12px]"
+        >
+          <div class="flex items-center justify-center">
+            <span class="font-bangers text-[40px] xl:text-[52px] uppercase">
+              Emoji Question of the Week:
+            </span>
+          </div>
+        </div>
+        <div
+          id="question-section"
+          class="flex flex-col items-center px-5 xl:px-72 py-8 xl:py-6"
+        >
+          <img
+            id="quiz-image"
+            class="xl:w-[765px] border border-black rounded-3xl mb-6"
+            src=""
+            alt="Generated image"
+          />
+          <form
+            id="quiz-form"
+            class="flex flex-col items-center justify-center font-poppins w-full capitalize"
+          >
+            <input
+              id="answer"
+              name="answer"
+              type="text"
+              placeholder="Answer here..."
+              class="text-xl text-gray-500 outline hover:outline-2 outline-gray-500 px-10 py-3 w-full rounded-lg"
+              autocomplete="off"
+            />
+            <div id="error-answer" class="text-red-500 text-sm mt-2 hidden">
+              Answer is required
+            </div>
+            <!-- Additional fields will be injected by JavaScript -->
+            <div
+              id="form-fields"
+              class="w-full grid grid-cols-1 sm:grid-cols-2 gap-5 mt-6"
+            ></div>
+            <div class="w-full mt-6">
+              <label class="block mb-2">
+                <input type="checkbox" id="checkbox1" name="checkbox1" /> I
+                confirm I am 18 years or older.
+              </label>
+              <div
+                id="error-checkbox1"
+                class="text-red-500 text-sm hidden mb-2"
+              >
+                This confirmation is required.
+              </div>
+
+              <label class="block mb-2">
+                <input type="checkbox" id="checkbox2" name="checkbox2" /> I
+                agree to the terms and conditions.
+              </label>
+              <div
+                id="error-checkbox2"
+                class="text-red-500 text-sm hidden mb-2"
+              >
+                You must agree to the terms.
+              </div>
+
+              <div
+                class="w-full mt-6 flex flex-col items-center justify-center"
+              >
+                <div
+                  class="g-recaptcha my-4"
+                  data-sitekey="YOUR_SITE_KEY"
+                  data-callback="onCaptcha"
+                ></div>
+              </div>
+            </div>
+            <div class="flex flex-col items-center justify-center w-full">
+              <button
+                id="submitBtn"
+                class="mt-[20px] xl:mt-[40px] w-[300px] py-[20px] text-xl rounded-lg font-semibold text-white shadow-[0_6px_12px_-3px_#0009] border-b-[3pt] border-[#083acd]/40 uppercase active:outline-2 active:outline-black active:outline-offset-2 cursor-pointer bg-[#4363F8]/80 hover:bg-[#002DFF]/80"
+              >
+                Submit My Entry
+              </button>
+            </div>
+            <script>
+              const submitBtn = document.getElementById("submitBtn");
+              let loading = false;
+
+              function setLoading(isLoading) {
+                loading = isLoading;
+                submitBtn.disabled = loading;
+                submitBtn.textContent = loading
+                  ? "Submitting..."
+                  : "Submit My Entry";
+                submitBtn.className = `
+      mt-[20px] xl:mt-[40px] w-sm py-[20px] text-xl rounded-lg font-semibold text-white
+      shadow-[0_6px_12px_-3px_#0009]
+      border-b-[3pt] border-[#083acd]/40 uppercase active:outline-2 active:outline-black active:outline-offset-2
+      ${
+        loading
+          ? "cursor-not-allowed bg-[#747474] hover:bg-[#747474]"
+          : "cursor-pointer bg-[#4363F8]/80 hover:bg-[#002DFF]/80"
+      }
+    `;
+              }
+
+              // Example usage:
+              // setLoading(true); // sets button to loading state
+              // setTimeout(() => setLoading(false), 3000); // resets after 3s
+            </script>
+          </form>
+        </div>
+        <div
+          class="px-[20px] xl:px-[288px] xl:pb-[100px] xl:pt-[12px] pb-[28px] font-figtree font-bold text-base text-center italic"
+        >
+          Promo runs from
+          <span class="font-extrabold">May 31, 2025 to August 09, 2025</span>.
+          Per DTI-Fair Trade Permit No. FTEB-206859 Series of 2024. Click
+          <a
+            href="/promos.html"
+            target="_blank"
+            class="text-[#5775FF] hover:text-[#4363F8] active:text-[#2748E1] cursor-pointer"
+            >here</a
+          >
+          for more details
+        </div>
+      </div>
+      <script>
+        let capVal = null;
+        function onCaptcha(value) {
+          capVal = value;
+        }
+
+        const sheetState = { image: null, sheetName: null };
+
+        document.addEventListener("DOMContentLoaded", async () => {
+          try {
+            const res = await fetch(
+              "https://whrstryeskhcfwnmj7hxri3u2q0hhwjr.lambda-url.ap-southeast-1.on.aws"
+            );
+            const data = await res.json();
+            console.log(data.uri);
+            sheetState.image = data.uri;
+            sheetState.sheetName = data.sheetName;
+            document.getElementById("quiz-image").src = sheetState.image;
+          } catch (err) {
+            console.error("Fetch error:", err);
+          }
+
+          const fields = [
+            { id: "firstname", label: "First Name" },
+            { id: "lastname", label: "Last Name" },
+            { id: "birthdate", label: "Birth Date", placeholder: "MM/DD/YYYY" },
+            { id: "address", label: "Address" },
+            { id: "contactnumber", label: "Mobile Number" },
+            { id: "email", label: "Email Address", type: "email" },
+          ];
+
+          const formFieldsDiv = document.getElementById("form-fields");
+          fields.forEach((field) => {
+            const div = document.createElement("div");
+            div.className = "flex flex-col space-y-3";
+            div.innerHTML = `
+          <label for="${
+            field.id
+          }" class="text-xl font-semibold text-gray-700">${field.label}</label>
+          <input type="${field.type || "text"}" id="${field.id}" name="${
+              field.id
+            }" placeholder="${
+              field.placeholder || "Answer here..."
+            }" class="text-base text-gray-500 outline hover:outline-2 outline-gray-500 px-5 py-3 w-full rounded-lg" autocomplete="off" />
+          <div id="error-${field.id}" class="text-red-500 text-sm hidden"></div>
+        `;
+            formFieldsDiv.appendChild(div);
+          });
+
+          document
+            .getElementById("quiz-form")
+            .addEventListener("submit", async (e) => {
+              e.preventDefault();
+              const data = {};
+              let hasError = false;
+
+              const requiredFields = ["answer", ...fields.map((f) => f.id)];
+              requiredFields.forEach((id) => {
+                const el = document.getElementById(id);
+                const err = document.getElementById(`error-${id}`);
+                if (!el.value.trim()) {
+                  err.textContent = `${id.replace(
+                    /([a-z])([A-Z])/g,
+                    "$1 $2"
+                  )} is required.`;
+                  err.classList.remove("hidden");
+                  hasError = true;
+                } else {
+                  err.classList.add("hidden");
+                  data[id] = el.value.trim();
+                }
+              });
+
+              const checkbox1 = document.getElementById("checkbox1");
+              const checkbox2 = document.getElementById("checkbox2");
+              const errorCheckbox1 = document.getElementById("error-checkbox1");
+              const errorCheckbox2 = document.getElementById("error-checkbox2");
+
+              if (!checkbox1.checked) {
+                errorCheckbox1.classList.remove("hidden");
+                hasError = true;
+              } else {
+                errorCheckbox1.classList.add("hidden");
+              }
+
+              if (!checkbox2.checked) {
+                errorCheckbox2.classList.remove("hidden");
+                hasError = true;
+              } else {
+                errorCheckbox2.classList.add("hidden");
+              }
+
+              if (!capVal) {
+                hasError = true;
+              }
+
+              if (hasError) return;
+
+              const payload = {
+                ...data,
+                sheetName: sheetState.sheetName,
+                dateSubmitted: new Date().toLocaleString("en-US", {
+                  timeZone: "Asia/Manila",
+                }),
+                captchaToken: capVal,
+              };
+
+              try {
+                const res = await fetch(
+                  "https://6uv24nloxjn7fp2n7oesadwsri0pzpvk.lambda-url.ap-southeast-1.on.aws",
+                  {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(payload),
+                  }
+                );
+                const result = await res.json();
+                if (result.error) throw new Error(result.details);
+                document.getElementById("quiz-form").reset();
+                capVal = null;
+                grecaptcha.reset();
+              } catch (err) {
+                console.log(err.message);
+              }
+            });
+        });
+      </script>
+    </div>
+
+    <!-- PRIZE -->
+
+    <div class="relative overflow-hidden py-1" id="features">
+      <div
+        class="relative flex flex-col items-center justify-center bg-[#EEB700]/75 py-40 md:py-60 xl:py-40"
+      >
+        <!-- Main Content -->
+        <div
+          class="flex flex-col items-center justify-center w-screen pt-[40px] -space-y-[12px] xl:-space-y-[20px] z-20"
+        >
+          <div
+            class="flex flex-col items-center justify-center relative w-full"
+          >
+            <img
+              class="max-w-[250px] xl:max-w-[446px] z-10"
+              src="/images/features/prizes.png"
+              alt=""
+            />
+            <img
+              class="absolute top-1 xl:top-2 max-w-[250px] xl:max-w-[446px] pointer-events-none select-none"
+              src="/images/features/prizes-shadow.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex flex-col items-center justify-center max-w-sm xl:w-full"
+          >
+            <img
+              class="max-w-sm xl:max-w-[787px] pointer-events-none select-none"
+              src="/images/features/5winners.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- Background Confetti -->
+        <div
+          class="absolute flex items-center justify-center w-full h-full z-10"
+        >
+          <img
+            class="xl:h-full xl:w-auto max-w-max h-full pointer-events-none select-none scale-105"
+            src="/images/features/confetti.png"
+            alt=""
+          />
+        </div>
+
+        <!-- Yellow Backgrounds -->
+        <div
+          class="absolute flex items-center justify-center w-full h-full z-0 overflow-hidden opacity-100"
+        >
+          <img
+            class="hidden sm:block w-full h-full opacity-80 pointer-events-none select-none"
+            src="/images/features/yellow-background.png"
+            alt=""
+          />
+          <img
+            class="block sm:hidden w-full opacity-80 pointer-events-none select-none yellow-background-mobile"
+            src="/images/features/yellow-background-mobile.png"
+            alt=""
+          />
+        </div>
+
+        <!-- Small Confetti -->
+        <div
+          class="absolute flex items-center justify-center w-full h-full z-0 opacity-80"
+        >
+          <img
+            class="xl:h-full xl:w-auto max-w-max h-full pointer-events-none select-none scale-110"
+            src="/images/features/small-confetti.png"
+            alt=""
+          />
+        </div>
+
+        <!-- Emojis -->
+        <div class="absolute w-full h-full z-40">
+          <div class="relative w-full h-full">
+            <div
+              class="absolute max-w-[60px] xl:max-w-[100px] top-[240px] left-[20px] md:left-[180px] xl:top-[160px] xl:left-[360px] z-0"
+            >
+              <img
+                class="max-w-[60px] xl:max-w-[100px] pointer-events-none select-none"
+                src="/images/hero/emoji1.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="absolute max-w-[60px] xl:max-w-[100px] top-[240px] md:top-[280px] right-[20px] md:right-[160px] xl:right-[340px] xl:top-[200px] z-0"
+            >
+              <img
+                class="max-w-[60px] xl:max-w-[100px] scale-x-[-1] pointer-events-none select-none"
+                src="/images/hero/emoji1.png"
+                alt=""
+              />
+            </div>
+            <div class="absolute w-[190px] bottom-[240px] right-[240px] z-0">
+              <img
+                class="xl:block hidden max-w-[190px] pointer-events-none select-none"
+                src="/images/hero/emoji3.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="absolute max-w-[95px] xl:max-w-[190px] bottom-[140px] md:bottom-[220px] left-[12px] md:left-[200px] xl:bottom-[200px] xl:left-[160px] z-0"
+            >
+              <img
+                class="max-w-[95px] xl:max-w-[190px] pointer-events-none select-none"
+                src="/images/hero/emoji4.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Clouds -->
+      <div class="absolute top-12 md:top-19 xl:top-0 w-full -mt-1 z-30">
+        <img
+          class="pointer-events-none select-none cloud-top w-full"
+          src="/images/features/cloud-top.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="absolute bottom-12 md:bottom-19 xl:bottom-0 w-full -mb-1 z-30"
+      >
+        <img
+          class="pointer-events-none select-none cloud-bottom w-full"
+          src="/images/features/cloud.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- FAQ -->
+
+    <div class="bg-gray-50">
+      <div id="faq">
+        <div class="relative h-fit xl:h-[1280px] overflow-hidden pb-[120px]">
+          <div
+            class="flex items-center justify-center py-[12px] xl:pt-[28px] xl:pb-[8px]"
+          >
+            <span class="font-bangers text-[40px] xl:text-[52px]"
+              >Promotion Mechanics</span
+            >
+          </div>
+          <div
+            class="flex flex-col items-center justify-start xl:py-0 px-[20px] xl:px-[300px] space-y-[48px]"
+          >
+            <div
+              class="flex flex-col items-start justify-between w-full border-2 border-black rounded-lg overflow-hidden z-10"
+            >
+              <div
+                class="flex items-center justify-between w-full text-xl font-bold bg-[#3DE93D] text-gray-700 px-[28px] py-[14px] border-b-2 rounded-none"
+              >
+                <span>Who can join?</span>
+              </div>
+              <div class="w-full text-xl font-bold text-gray-500 h-auto">
+                <div class="w-full px-[28px] py-[14px] bg-white">
+                  This contest is open to all Filipinos who are 18 years old and
+                  above.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col items-start justify-between w-full border-2 border-black rounded-lg overflow-hidden z-10"
+            >
+              <div
+                class="flex items-center justify-between w-full text-xl font-bold bg-[#3DE93D] text-gray-700 px-[28px] py-[14px] border-b-2 rounded-none"
+              >
+                <span>How to join?</span>
+              </div>
+              <div class="w-full text-xl font-bold text-gray-500 h-auto">
+                <div class="w-full px-[28px] py-[14px] bg-white">
+                  Answer the form along with your first name, last name,
+                  birthday, address, contact number, and email address
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col items-start justify-between w-full border-2 border-black rounded-lg overflow-hidden z-10"
+            >
+              <div
+                class="flex items-center justify-between w-full text-xl font-bold bg-[#3DE93D] text-gray-700 px-[28px] py-[14px] border-b-2 rounded-none"
+              >
+                <span>When is the deadline for submission?</span>
+              </div>
+              <div class="w-full text-xl font-bold text-gray-500 h-auto">
+                <div class="w-full px-[28px] py-[14px] bg-white">
+                  Make sure to submit your entry right after the episode airs,
+                  as the deadline is the following Monday at 12:00 PM (noon),
+                  and remember that only one entry per person is allowed each
+                  week.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col items-start justify-between w-full border-2 border-black rounded-lg overflow-hidden z-10"
+            >
+              <div
+                class="flex items-center justify-between w-full text-xl font-bold bg-[#3DE93D] text-gray-700 px-[28px] py-[14px] border-b-2 rounded-none"
+              >
+                <span>When are the winners be announced?</span>
+              </div>
+              <div class="w-full text-xl font-bold text-gray-500 h-auto">
+                <div class="w-full px-[28px] py-[14px] bg-white">
+                  The Emojination team will announce the winners during the next
+                  airing episode on the following Saturday.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col items-start justify-between w-full border-2 border-black rounded-lg overflow-hidden z-10"
+            >
+              <div
+                class="flex items-center justify-between w-full text-xl font-bold bg-[#3DE93D] text-gray-700 px-[28px] py-[14px] border-b-2 rounded-none"
+              >
+                <span>What are the prizes?</span>
+              </div>
+              <div class="w-full text-xl font-bold text-gray-500 h-auto">
+                <div class="w-full px-[28px] py-[14px] bg-white">
+                  5 winners will be selected using a randomizer per week, and if
+                  you’re one of them, the Emojination staff will reach out to
+                  you via email or phone call to confirm your prize. Winners
+                  will received 2,000 (two thousand pesos) per week. The winner
+                  will receive their cash prize via Bank transfer, remittance,
+                  and transaction fees will be shouldered by the show
+                </div>
+              </div>
+            </div>
+
+            <!-- Decorative images, visible only on xl screens -->
+            <img
+              class="xl:block hidden absolute -left-20 max-w-[490px] pointer-events-none select-none"
+              src="/images/faq/victory1.gif"
+              alt=""
+            />
+            <img
+              class="xl:block hidden absolute bottom-45 -left-18 max-w-[430px] pointer-events-none select-none"
+              src="/images/faq/victory2.gif"
+              alt=""
+            />
+            <img
+              class="xl:block hidden absolute top-75 -right-14 max-w-[420px] pointer-events-none select-none"
+              src="/images/faq/victory3.gif"
+              alt=""
+            />
+          </div>
+
+          <img
+            class="pointer-events-none select-none absolute bottom-[80px] xl:bottom-0 max-w-full scale-280 xl:scale-100"
+            src="/images/faq/background-building.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- JS Animation Script -->
+    <script type="module">
+      import { animate, stagger } from "https://cdn.skypack.dev/motion";
+
+      const container = document.getElementById("animated-groups");
+      const imageGroups = [
+        "/images/hero/egroup1.png",
+        "/images/hero/egroup2.png",
+      ];
+      let index = 0;
+
+      function showImage(i) {
+        container.innerHTML = "";
+
+        const motionDiv = document.createElement("motion-div");
+        motionDiv.setAttribute(
+          "initial",
+          JSON.stringify({ opacity: 0, y: 30, scale: 0.8 })
+        );
+        motionDiv.setAttribute(
+          "animate",
+          JSON.stringify({ opacity: 1, y: 0, scale: 1 })
+        );
+        motionDiv.setAttribute(
+          "exit",
+          JSON.stringify({ opacity: 0, scale: 0.8 })
+        );
+        motionDiv.setAttribute(
+          "transition",
+          JSON.stringify({ type: "tween", duration: 0.2 })
+        );
+        motionDiv.className = "md:absolute md:bottom-0 xl:relative w-full";
+
+        const img = document.createElement("img");
+        img.src = imageGroups[i];
+        img.className =
+          "w-lg scale-105 sm:scale-110 md:scale-100 sm:w-[960px] md:-ml-[20px] md:mt-[56px] z-30 pointer-events-none select-none";
+
+        motionDiv.appendChild(img);
+        container.appendChild(motionDiv);
+      }
+
+      // Initial display
+      showImage(index);
+
+      // Interval rotation
+      setInterval(() => {
+        index = (index + 1) % imageGroups.length;
+        showImage(index);
+      }, 7000);
+    </script>
+
+    <script src="https://cignal-tv.s3.us-east-1.amazonaws.com/widget/nav.min.js"></script>
+    <script src="https://cignal-tv.s3.us-east-1.amazonaws.com/widget/footer.min.js"></script>
+  </body>
+</html>
