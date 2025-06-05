@@ -2,47 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Promo Rules</title>
-    <style>
-      /* Remove all spaces around the screen */
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        width: 100%;
-        font-family: "Poppins", sans-serif;
-        font-size: 20px;
-        line-height: 42px;
-      }
-      .title {
-        font-weight: 800; /* extrabold */
-        font-size: 36px;
-        text-transform: uppercase;
-        padding: 20px 0; /* reduced padding, only vertical */
-        text-align: left;
-        display: block;
-        width: 100%;
-        margin: 0;
-      }
-      p {
-        margin: 0 0 1em 0; /* remove side margins */
-      }
-      .font-bold {
-        font-weight: 700;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/@motion.dev/dom"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/@motion.dev/dom"></script>
+    <!-- Link to the style.css -->
+    <link rel="stylesheet" href="style.css" />
     <!-- HEADER'S AND FOOTER'S -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Figtree:wght@500;700;800&family=Poppins&display=swap");
+      .font-bangers {
+        font-family: "Bangers", cursive;
+      }
+      .font-figtree {
+        font-family: "Figtree", sans-serif;
+      }
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+      .scale-280 {
+        transform: scale(2.8);
+      }
+      .top-75 {
+        top: 75px;
+      }
+      .bottom-45 {
+        bottom: 45px;
+      }
+    </style>
   </head>
-  <body>
+  <body class="bg-white">
     <div class="flex flex-col items-left justify-center pt-14 pb-10 px-10">
-      <span class="title">Promo Mechanics</span>
+      <span class="title font-bold">Promo Mechanics</span>
 
       <p>
         1. This promo is open to all Filipino citizens aged 18 years old and
